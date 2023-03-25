@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Rza Bank</h1>
+
+      <label for="deposit">Mebleg daxil edin:</label>
+      <input type="number" id="deposit" name="deposit" value="0" />
+      <button onclick="deposit()">Gonder</button>
+
+      <!-- cash -->
+      <label for="withdraw">Çekilecek Mebleg:</label>
+      <input type="number" id="withdraw" name="withdraw" value="0" />
+      <button onclick="withdraw()">Çek</button>
+
+      <!-- balance -->
+      <p>Balans: <span id="display-balance">0</span></p>
+
+      <!-- history -->
+      <h2>Emeliyyat kecmisi</h2>
+      <ul id="transaction-history"></ul>
+    </main>
+  </body>
+</html>
